@@ -243,12 +243,13 @@ Vehicle Features
 */
 .guidelines-check-list li{
 	position: relative;
+	padding-left: 2rem;
 }
 .guidelines-check-list li:not(:last-child){
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
 }
 .guidelines-check-list li::before {
-	padding: 2px 4px;
+	padding: 0px 4px;
     margin-right: .5rem;
     font-family: bootstrap-icons !important;
     text-transform: none;
@@ -260,6 +261,8 @@ Vehicle Features
     color: #fff;
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
+	left: 0;
+	position: absolute;
 }
 /*
 Vehicle Features
