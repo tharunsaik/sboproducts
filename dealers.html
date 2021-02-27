@@ -1820,57 +1820,280 @@ Why SVL Global
 			<section id="DealerSignUp" class="uk-section p-4 grey-700 font-size-3" uk-height-viewport>
 				<h2 class="uk-heading-line-1 mb-5 text-primary"><span>Dealer Sign up</span></h2>
 				<div class="uk-container uk-text-center">
-					<form action="" class="form-divider uk-grid-small uk-child-width-1-3" uk-grid>
+					<form action="" class="form-divider uk-grid-small uk-child-width-expand" uk-grid>
 						<div class="uk-width-1-5">
-							<select class="form-control">
-								<option selected disabled>Dealer Type*</option>
-								<option>1-50</option>
-								<option>50-100</option>
-								<option>more than 100</option>
-							</select>
-						</div>
-						<div>
-							<input class="form-control" type="text" placeholder="Business Name*">
-						</div>
-						<div>
-							<input class="form-control" type="text" placeholder="Contact Person Name">
-						</div>
-						<div class="uk-width-1-5">
-							<select class="form-control">
-								<option selected disabled>Business Size*</option>
-								<option>1-50</option>
-								<option>50-100</option>
-								<option>more than 100</option>
-							</select>
+							<div class="mdc-select mdc-select--filled demo-width-class" data-mdc-auto-init="MDCSelect">
+							  <div class="mdc-select__anchor"
+								   role="button"
+								   aria-haspopup="listbox"
+								   aria-expanded="false"
+								   aria-labelledby="demo-label demo-selected-text">
+								<span class="mdc-select__ripple"></span>
+								<span id="demo-label" class="mdc-floating-label">Dealer Type*</span>
+								<span class="mdc-select__selected-text-container">
+								  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+								</span>
+								<span class="mdc-select__dropdown-icon">
+								  <svg
+									  class="mdc-select__dropdown-icon-graphic"
+									  viewBox="7 10 10 5" focusable="false">
+									<polygon
+										class="mdc-select__dropdown-icon-inactive"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 10 12 15 17 10">
+									</polygon>
+									<polygon
+										class="mdc-select__dropdown-icon-active"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 15 12 10 17 15">
+									</polygon>
+								  </svg>
+								</span>
+								<span class="mdc-line-ripple"></span>
+							  </div>
+
+							  <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+								<ul class="mdc-list" role="listbox" aria-label="Food picker listbox">
+								  <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" data-value="" role="option">
+									<span class="mdc-list-item__ripple"></span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="grains" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  Type 1
+									</span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="fruit" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  Type 2
+									</span>
+								  </li>
+								</ul>
+							  </div>
+							</div>
 						</div>
 						<div class="uk-width-2-5">
-							<input class="form-control" type="text" placeholder="Webiste URL">
+							<label class="mdc-text-field mdc-text-field--filled w-100" data-mdc-auto-init="MDCTextField">
+								<span class="mdc-text-field__ripple"></span>
+								<span class="mdc-floating-label" id="my-label-id">Business Name*</span>
+								<input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+								<span class="mdc-line-ripple"></span>
+							</label>
+						</div>
+						<div class="uk-width-2-5">
+							<label class="mdc-text-field mdc-text-field--filled w-100" data-mdc-auto-init="MDCTextField">
+								<span class="mdc-text-field__ripple"></span>
+								<span class="mdc-floating-label" id="my-label-id">Contact Person Name</span>
+								<input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+								<span class="mdc-line-ripple"></span>
+							</label>
 						</div>
 						<div class="uk-width-1-5">
-							<select class="form-control">
-								<option selected disabled>Products*</option>
-								<option>1-50</option>
-								<option>50-100</option>
-								<option>more than 100</option>
-							</select>
-						</div>
-						<div class="uk-width-1-1">
-							<div class="uk-grid-small uk-child-width-expand" uk-grid>
-								<div class="uk-width-auto">
-									<select class="form-control">
-										<option selected disabled>+91</option>
-										<option>+92</option>
-										<option>+93</option>
-										<option>+94</option>
-									</select>
-								</div>
-								<div>
-									<input class="form-control" type="text" placeholder="Contact Number*">
-								</div>
-								<div>
-									<input class="form-control" type="text" placeholder="Email ID*">
-								</div>
+							<div class="mdc-select mdc-select--filled demo-width-class" data-mdc-auto-init="MDCSelect">
+							  <div class="mdc-select__anchor"
+								   role="button"
+								   aria-haspopup="listbox"
+								   aria-expanded="false"
+								   aria-labelledby="demo-label demo-selected-text">
+								<span class="mdc-select__ripple"></span>
+								<span id="demo-label" class="mdc-floating-label">Business Size*</span>
+								<span class="mdc-select__selected-text-container">
+								  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+								</span>
+								<span class="mdc-select__dropdown-icon">
+								  <svg
+									  class="mdc-select__dropdown-icon-graphic"
+									  viewBox="7 10 10 5" focusable="false">
+									<polygon
+										class="mdc-select__dropdown-icon-inactive"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 10 12 15 17 10">
+									</polygon>
+									<polygon
+										class="mdc-select__dropdown-icon-active"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 15 12 10 17 15">
+									</polygon>
+								  </svg>
+								</span>
+								<span class="mdc-line-ripple"></span>
+							  </div>
+
+							  <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+								<ul class="mdc-list" role="listbox" aria-label="Food picker listbox">
+								  <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" data-value="" role="option">
+									<span class="mdc-list-item__ripple"></span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="grains" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  1-50
+									</span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="fruit" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  50-100
+									</span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="fruit" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  more than 100
+									</span>
+								  </li>
+								</ul>
+							  </div>
 							</div>
+						</div>
+						<div class="uk-width-2-5">
+							<label class="mdc-text-field mdc-text-field--filled w-100" data-mdc-auto-init="MDCTextField">
+								<span class="mdc-text-field__ripple"></span>
+								<span class="mdc-floating-label" id="my-label-id">Website URL</span>
+								<input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+								<span class="mdc-line-ripple"></span>
+							</label>
+						</div>
+						<div class="uk-width-2-5">
+							<div class="mdc-select mdc-select--filled demo-width-class w-100" data-mdc-auto-init="MDCSelect">
+							  <div class="mdc-select__anchor"
+								   role="button"
+								   aria-haspopup="listbox"
+								   aria-expanded="false"
+								   aria-labelledby="demo-label demo-selected-text">
+								<span class="mdc-select__ripple"></span>
+								<span id="demo-label" class="mdc-floating-label">Products</span>
+								<span class="mdc-select__selected-text-container">
+								  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+								</span>
+								<span class="mdc-select__dropdown-icon">
+								  <svg
+									  class="mdc-select__dropdown-icon-graphic"
+									  viewBox="7 10 10 5" focusable="false">
+									<polygon
+										class="mdc-select__dropdown-icon-inactive"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 10 12 15 17 10">
+									</polygon>
+									<polygon
+										class="mdc-select__dropdown-icon-active"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 15 12 10 17 15">
+									</polygon>
+								  </svg>
+								</span>
+								<span class="mdc-line-ripple"></span>
+							  </div>
+
+							  <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+								<ul class="mdc-list" role="listbox" aria-label="Food picker listbox">
+								  <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" data-value="" role="option">
+									<span class="mdc-list-item__ripple"></span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="grains" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  Product 1
+									</span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="fruit" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  Product 2
+									</span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="fruit" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  Product 3
+									</span>
+								  </li>
+								</ul>
+							  </div>
+							</div>
+						</div>
+						<div class="uk-width-1-6">
+							<div class="mdc-select mdc-select--filled demo-width-class w-100" data-mdc-auto-init="MDCSelect">
+							  <div class="mdc-select__anchor"
+								   role="button"
+								   aria-haspopup="listbox"
+								   aria-expanded="false"
+								   aria-labelledby="demo-label demo-selected-text">
+								<span class="mdc-select__ripple"></span>
+								<span id="demo-label" class="mdc-floating-label">+91</span>
+								<span class="mdc-select__selected-text-container">
+								  <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+								</span>
+								<span class="mdc-select__dropdown-icon">
+								  <svg
+									  class="mdc-select__dropdown-icon-graphic"
+									  viewBox="7 10 10 5" focusable="false">
+									<polygon
+										class="mdc-select__dropdown-icon-inactive"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 10 12 15 17 10">
+									</polygon>
+									<polygon
+										class="mdc-select__dropdown-icon-active"
+										stroke="none"
+										fill-rule="evenodd"
+										points="7 15 12 10 17 15">
+									</polygon>
+								  </svg>
+								</span>
+								<span class="mdc-line-ripple"></span>
+							  </div>
+
+							  <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+								<ul class="mdc-list" role="listbox" aria-label="Food picker listbox">
+								  <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" data-value="" role="option">
+									<span class="mdc-list-item__ripple"></span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="grains" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  +92
+									</span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="fruit" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  +93
+									</span>
+								  </li>
+								  <li class="mdc-list-item" aria-selected="false" data-value="fruit" role="option">
+									<span class="mdc-list-item__ripple"></span>
+									<span class="mdc-list-item__text">
+									  +94
+									</span>
+								  </li>
+								</ul>
+							  </div>
+							</div>
+						</div>
+						<div class="uk-width-2-5">
+							<label class="mdc-text-field mdc-text-field--filled w-100" data-mdc-auto-init="MDCTextField">
+								<span class="mdc-text-field__ripple"></span>
+								<span class="mdc-floating-label" id="my-label-id">Contact Number*</span>
+								<input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+								<span class="mdc-line-ripple"></span>
+							</label>
+						</div>
+						<div class="uk-width-3-4">
+							<label class="mdc-text-field mdc-text-field--filled w-100" data-mdc-auto-init="MDCTextField">
+								<span class="mdc-text-field__ripple"></span>
+								<span class="mdc-floating-label" id="my-label-id">Email ID*</span>
+								<input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+								<span class="mdc-line-ripple"></span>
+							</label>
 						</div>
 						<div class="uk-width-1-3">
 							<select class="form-control">
